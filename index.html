@@ -7,37 +7,66 @@
     <title>Campos de Estágio</title>
 </head>
 <body>
-    <h1>Campos de Estágio</h1>
+    <header>
+        <div class="header-logo">
+            <!-- Ícone de saúde (SVG) -->
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="#38b6ff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21s-8-6.58-8-11.5A5.5 5.5 0 0 1 12 4.5a5.5 5.5 0 0 1 8 5.01C20 14.42 12 21 12 21z"/>
+            </svg>
+            <h1 class="header-title">Gestão de Estágios</h1>
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Campos de Estágio</a>
+            <a href="#">Estudantes</a>
+            <a href="#">Supervisores</a>
+            <a href="#">Relatórios</a>
+        </nav>
+    </header>
 
-    <h2>Cadastro</h2>
-    <form>
-        <div class="inputbox">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Nome da instituição..." required>
-        </div>
-        <div class="inputbox">
-            <label for="endereco">Endereço</label>
-            <input type="text" id="endereco" placeholder="Endereço da instituição..." required>
-        </div>
-        <div class="inputbox">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
-        </div>
-        <div class="inputbox">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail da instituição..." required>
-        </div>
-        <div class="inputbox">
-            <label for="horas">Horas Semanais</label>
-            <input type="text" id="horas" placeholder="Horas semanais de estágio..." required>
-        </div>
-        <div class="inputbox">
-            <label for="vagas">Quantidade de Vagas</label>
-            <input type="text" id="vagas" placeholder="Quantidade de vagas disponíveis..." required>
-        </div>
-        <button type="submit">Cadastrar</button>
-    </form>
+    <div class="container">
+        <h2>Cadastro de Campo de Estágio</h2>
+        <p class="descricao-cadastro">
+            Cadastre instituições de saúde parceiras para oferta de estágios supervisionados em Londrina-PR.
+        </p>
+        <form>
+            <div class="inputbox">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Nome da instituição..." required>
+            </div>
+            <div class="inputbox">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Endereço da instituição..." required>
+            </div>
+            <div class="inputbox">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="inputbox">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail da instituição..." required>
+            </div>
+            <div class="inputbox">
+                <label for="horas">Horas Semanais</label>
+                <input type="text" id="horas" placeholder="Horas semanais de estágio..." required>
+            </div>
+            <div class="inputbox">
+                <label for="vagas">Quantidade de Vagas</label>
+                <input type="text" id="vagas" placeholder="Quantidade de vagas disponíveis..." required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
 
+        <h2 class="titulo-tabela">Instituições Cadastradas</h2>
+        <div class="resultados-container">
+            <!-- Os cards serão inseridos aqui via JavaScript -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Sistema de Gestão de Estágios em Saúde &copy; 2025 - Londrina/PR</p>
+        <p style="font-size: 0.9em;">Desenvolvido para apoiar a formação de profissionais da saúde.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
